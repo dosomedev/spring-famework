@@ -1,0 +1,84 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 10em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-bounce {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a .logo {
+      animation: logo-bounce infinite 2s ease-in-out;
+    }
+}
+
+.card {
+    border: 1px dotted red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.docs {
+    color: #888;
+}
+
+.full-width {
+    width: 100%;
+}
+
+textarea {
+    width: 95%;
+}
+
+.small-textarea {
+    height: 4em;
+}
+
+.big-textarea {
+    height: 8em;
+}
+
+.bg-blue {
+    background-color: #a9ddff;
+}
+
+.bg-yellow {
+    background-color: #f9ffa9;
+}
+
+.bg-red {
+    background-color: #ffa9a9;
+}
+
+.bg-green {
+    background-color: #a9ffbc;
+}
+
+.bg-violet {
+    background-color: #eba9ff;
+}
+
+.button-sizing {
+    width: 8em;
+}

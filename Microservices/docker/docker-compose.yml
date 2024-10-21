@@ -1,0 +1,23 @@
+services:
+  catalog:
+    image: ${CONTAINER_NAME_CATALOG}:${CONTAINER_VERSION_CATALOG}
+    restart: always
+    container_name: ${CONTAINER_NAME_CATALOG}
+  order:
+    image: ${CONTAINER_NAME_ORDER}:${CONTAINER_VERSION_ORDER}
+    restart: always
+    container_name: ${CONTAINER_NAME_ORDER}
+  payment:
+    image: ${CONTAINER_NAME_PAYMENT}:${CONTAINER_VERSION_PAYMENT}
+    restart: always
+    container_name: ${CONTAINER_NAME_PAYMENT}
+  shipping:
+    image: ${CONTAINER_NAME_SHIPPING}:${CONTAINER_VERSION_SHIPPING}
+    restart: always
+    container_name: ${CONTAINER_NAME_SHIPPING}
+  view:
+    image: ${CONTAINER_NAME_VIEW}:${CONTAINER_VERSION_VIEW}
+    restart: always
+    container_name: ${CONTAINER_NAME_VIEW}
+    ports:
+      - 8080:80

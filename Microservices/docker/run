@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Copy services into temp directory.
+cp -r ../microservices/services ./tmp
+
+# Build Spring microservices.
+cd tmp/catalog
+./build
+cd ../..
+
+cd tmp/order
+./build
+cd ../..
+
+cd tmp/payment
+./build
+cd ../..
+
+cd tmp/shipping
+./build
+cd ../..
+
+cd tmp/view
+./build
+cd ../..
+
+# Set vars.
+export CONTAINER_NAME_CATALOG="dosomedev-catalog"
+export CONTAINER_VERSION_CATALOG="0.0.1"
+
+export CONTAINER_NAME_ORDER="dosomedev-order"
+export CONTAINER_VERSION_ORDER="0.0.1"
+
+export CONTAINER_NAME_PAYMENT="dosomedev-payment"
+export CONTAINER_VERSION_PAYMENT="0.0.1"
+
+export CONTAINER_NAME_SHIPPING="dosomedev-shipping"
+export CONTAINER_VERSION_SHIPPING="0.0.1"
+
+export CONTAINER_NAME_VIEW="dosomedev-view"
+export CONTAINER_VERSION_VIEW="0.0.1"
+
+# Build Docker images.
+docker build -t "$CONTAINER_NAME_CATALOG:$CONTAINER_VERSION_CATALOG" -f dockerfile-catalog .
+docker build -t "$CONTAINER_NAME_ORDER:$CONTAINER_VERSION_ORDER" -f dockerfile-order .
+docker build -t "$CONTAINER_NAME_PAYMENT:$CONTAINER_VERSION_PAYMENT" -f dockerfile-payment .
+docker build -t "$CONTAINER_NAME_SHIPPING:$CONTAINER_VERSION_SHIPPING" -f dockerfile-shipping .
+docker build -t "$CONTAINER_NAME_VIEW:$CONTAINER_VERSION_VIEW" -f dockerfile-view .
+
+# Remove services temp directory.
+rm -r tmp
+
+# Start Docker containers.
+docker compose up -d

@@ -1,0 +1,7 @@
+FROM amazoncorretto:23.0.0-al2023
+
+RUN mkdir /app
+COPY tmp/order/target/order-0.0.1.jar /app
+WORKDIR /app
+
+ENTRYPOINT ["java", "-jar", "order-0.0.1.jar"]

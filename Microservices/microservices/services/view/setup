@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Install Vite boilerplate React project.
+npm create vite@5.5.3 dosomedev-view -- --template react-ts --yes

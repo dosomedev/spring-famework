@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd dosomedev-view
+
+# Install project libraries.
+npm install
+
+# Run application in development mode.
+npm run build
