@@ -17,8 +17,13 @@ Welcome to the **Do Some Dev** code repository for Spring Framework examples. Th
 <table>
 <tr>
 <td align="center">
+<strong>Full-Stack</strong><br/>
+<a href="https://youtu.be/GZe6iGTFUUA" target="_blank"><img src="https://raw.githubusercontent.com/dosomedev/spring-famework/refs/heads/main/img/thumbnail-full-stack.png" alt="Link to YouTube"></a><br/>
+<a href="./Full-Stack">Code Example</a> / <a href="https://youtu.be/GZe6iGTFUUA" target="_blank">YouTube Video</a><br/><br/>
+</td>
+<td align="center">
 <strong>Microservices</strong><br/>
-<a href="https://youtu.be/lOhmXF4eFpI" target="_blank"><img src="https://raw.githubusercontent.com/dosomedev/spring-famework/refs/heads/main/img/Thumbnail-v1-Coding-Spring-Microservices-small.png" alt="Link to YouTube"></a><br/>
+<a href="https://youtu.be/lOhmXF4eFpI" target="_blank"><img src="https://raw.githubusercontent.com/dosomedev/spring-famework/refs/heads/main/img/thumbnail-microservices.png" alt="Link to YouTube"></a><br/>
 <a href="./Microservices">Code Example</a> / <a href="https://youtu.be/lOhmXF4eFpI" target="_blank">YouTube Video</a><br/><br/>
 </td>
 </tr>
