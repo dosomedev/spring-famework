@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Build Docker containers.
+sudo docker compose down
+
+# Remove db files.
+sudo rm -rf /srv/dosomedev

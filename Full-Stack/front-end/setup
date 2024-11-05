@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Install Vite boilerplate React project.
+npm create vite@5.5.4 web-view -- --template react-ts --yes
+
+cd web-view
+
+# Install Material UI.
+npm install @mui/material @emotion/react @emotion/styled
+# Install Roboto font.
+npm install @fontsource/roboto
+# Install Material Icons.
+npm install @mui/icons-material

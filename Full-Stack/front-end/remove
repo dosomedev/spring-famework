@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Remove project.
+rm -rf web-view
